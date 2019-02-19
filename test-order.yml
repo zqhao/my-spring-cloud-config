@@ -4,10 +4,9 @@ spring:
 
 spring:
   application:
-    name: order-micro #此实例注册到eureka服务端的name
+    name: order-micro
 
---- 
-
+---
 spring:
   profile: dev
 
@@ -21,9 +20,8 @@ eureka:
   instance:
     instance-id: order #此实例注册到eureka服务端的唯一的实例ID
     prefer-ip-address: true #是否显示IP地址
-    
---- 
 
+---
 spring:
   profile: test
 
