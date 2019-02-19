@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order-micro
+
+server:
+  port: 7000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka
+  instance:
+    instance-id: order #此实例注册到eureka服务端的唯一的实例ID
+    prefer-ip-address: true #是否显示IP地址
