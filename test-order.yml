@@ -3,6 +3,7 @@ spring:
     active: test
     
 ---
+
 spring:
   profiles: dev
   
@@ -22,6 +23,7 @@ spring:
     name: order-micro-dev #此实例注册到eureka服务端的name
 
 ---
+
 spring:
   profiles: test
   
