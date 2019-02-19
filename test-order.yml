@@ -1,6 +1,4 @@
 spring:
-  profile:
-    active: test
   application:
     name: order-micro
 
