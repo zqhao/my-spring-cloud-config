@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: order-micro
-
 server:
   port: 7000
 
