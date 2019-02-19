@@ -1,12 +1,3 @@
-spring:
-  profiles:
-    active: test
-    
----
-
-spring:
-  profiles: dev
-  
 server:
   port: 7000
 
@@ -15,31 +6,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka
   instance:
-    instance-id: order-dev #此实例注册到eureka服务端的唯一的实例ID
+    instance-id: order #此实例注册到eureka服务端的唯一的实例ID
     prefer-ip-address: true #是否显示IP地址
 
 spring:
   application:
-    name: order-micro-dev #此实例注册到eureka服务端的name
-
----
-
-spring:
-  profiles: test
-  
-server:
-  port: 7070
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8081/eureka
-  instance:
-    instance-id: order-test #此实例注册到eureka服务端的唯一的实例ID
-    prefer-ip-address: true #是否显示IP地址
-
-spring:
-  application:
-    name: order-micro-test #此实例注册到eureka服务端的name
+    name: order-micro #此实例注册到eureka服务端的name
 
   
