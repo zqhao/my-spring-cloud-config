@@ -1,7 +1,6 @@
 spring:
-  profile:
+  profiles:
     active: test
-
 
 ---
 spring:
