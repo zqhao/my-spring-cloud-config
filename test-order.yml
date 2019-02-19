@@ -1,11 +1,14 @@
 spring:
-  application:
-    name: order-micro
+  profile:
+    active: test
+
 
 ---
 spring:
   profile: dev
-
+  application:
+    name: order-micro
+    
 server:
   port: 7000
 
@@ -20,6 +23,8 @@ eureka:
 ---
 spring:
   profile: test
+  application:
+    name: order-micro
 
 server:
   port: 7001
