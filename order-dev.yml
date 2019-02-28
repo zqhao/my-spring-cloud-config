@@ -13,4 +13,4 @@ eureka:
     instance-id: order #此实例注册到eureka服务端的唯一的实例ID
     prefer-ip-address: true #是否显示IP地址
     
-from: github-order-dev-2.0
+from: github-order-dev-3.0
